@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/home/brilworks/Documents/myFiles/assi1/index.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <div class="sticky-top">
+        <nav class="d-flex justify-content-between align-items-center m-3 bg-white">
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/logo.png" alt="logo" class="logo"/>
+            <div>
+                <button class="nav-button">Restaurant</button>
+                <button class="nav-button">Bakery</button>
+                <button class="nav-button">Cakes</button>
+                <button class="nav-button">Gallery</button>
+                <button class="nav-button">News</button>
+                <button class="nav-button">info</button>
+            </div>
+        </nav>
+    </div>
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/home/brilworks/Documents/myFiles/assi1/images/a4.jpg" class="c-img d-block w-100" alt="sweets">
+                </div>
+            <div class="carousel-item ">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a1.jpg" class=" c-img d-block w-100" alt="sweets">
+            </div>
+            <div class="carousel-item">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a2.jpg" class="c-img d-block w-100" alt="sweets">
+            </div>
+            <div class="carousel-item">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a3.jpg" class="c-img d-block w-100" alt="sweets">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="detail-container">
+    <div class="info-details">
+        <h1 class="cafe-head">Josef's Vienna Bakery Cafe & Restaurant</h1>
+        <p class="cafe-para">We are open for Dine-In and Take-Out, bakery and cafel Opened in 1980 by Viennese Pastry Chef, Josef Pasa, this once small space has grown and grown to become the area's premier bakery with its’ own full-service restaurant, Cafe Vienna.</p>
+        <h2 class="deal-head">Today's Deal offers with Membership</h2>
+        <hr>
+        <div class="img-container">
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/4.jpg" alt="menu-img" class="menu-img"/>
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/7.jpg" alt="menu-img" class="menu-img"/>
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/1.jpg" alt="menu-img" class="menu-img"/>
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/3.jpg" alt="menu-img" class="menu-img"/>
+        </div>
+        <p style="color:red; font-size: 15px;">Click the item to check the price.</p>
+        <form class="form-container">
+            <h3 style="align-self: center;">Check the details of selected items</h3>
+            <hr>
+            <div>
+                <label for="price" class="label">Price</label>
+                <input type="text" class="textip" value="700" id='price' readonly/>
+                <label for="quantity" class="label">Quantity</label>
+                <button class="quantity-btn" type="button">+</button>
+                <input type="text" class="textip" value="2" id='price' readonly/>
+                <button class="quantity-btn" type="button">-</button>
+            </div>
+            <h2 style="color: orange; align-self: center;">Bill Details</h2>
+            <div>
+                <label for="total" class="amount-label">Total Items</label>
+                <input type="text" class="textip payip" value="1400" id='total' readonly/>
+            </div>
+            <div>
+                <label for="fee" class="amount-label">Delivery Fee</label>
+                <input type="text" class="textip payip" value="50" id='fee' readonly/>
+            </div>
+            <div>
+                <label for="pay" class="amount-label ">To pay</label>
+                <input type="text" class="textip payip" value="1450" id='pay' readonly/>
+            </div>
+        </form>
+    </div>
+    <div class="soup-container">
+        <h2 class="soup-head">Soup Details</h2>
+        <p class="soup-name">Week of January 15th 2020</p>
+        <h3 class="week-days">Monday</h3>
+        <p class="soup-name">Cream of Mushroom</p>
+        <h3 class="week-days">Tuesday</h3>
+        <p class="soup-name">Mulligatawny</p>
+        <h3 class="week-days">Wednesday</h3>
+        <p class="soup-name">Leak soup with Feta</p>
+        <h3 class="week-days">Thursday</h3>
+        <p class="soup-name">Carrot Soup</p>
+        <h3 class="week-days">Friday</h3>
+        <p class="soup-name">Shrimp & Tomato</p>
+    </div>
+</div>
+<footer class="footer">
+    <p class="footer-para">@ All rights reserved by CMPICA (student Name: Student id)</p>
+</footer>
+</body>
+</html>
