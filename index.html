@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="/home/brilworks/Documents/myFiles/assi1/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
     <!-- <link href="/home/brilworks/Documents/myFiles/assi1/index.scss" rel="stylesheet"/> -->
@@ -12,19 +13,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <title>Coffee Shop</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<title>Coffee Shop</title>
 </head>
 <body>
     <div class="sticky-top">
         <nav class="d-flex justify-content-between align-items-center p-3 bg-white">
-            <img src="/home/brilworks/Documents/myFiles/assi1/images/logo.png" alt="logo" class="logo"/>
-            <div>
+            <img src="/home/brilworks/Documents/myFiles/assi1/images/logo.png" alt="logo" class="logo" id="logo-img"/>
+            <div class="nav-btn-container">
                 <button class="nav-button">Restaurant</button>
                 <button class="nav-button">Bakery</button>
                 <button class="nav-button">Cakes</button>
                 <button class="nav-button">Gallery</button>
                 <button class="nav-button">News</button>
                 <button class="nav-button">info</button>
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                
+                <!-- <div class="hamburger-btn-container" id="hamburger-btn-container">
+                    <button class="nav-button">Restaurant</button>
+                    <button class="nav-button">Bakery</button>
+                    <button class="nav-button">Cakes</button>
+                    <button class="nav-button">Gallery</button>
+                    <button class="nav-button">News</button>
+                    <button class="nav-button">info</button>
+                </div> -->
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <button class="nav-button">Restaurant</button>
+                        <button class="nav-button">Bakery</button>
+                        <button class="nav-button">Cakes</button>
+                        <button class="nav-button">Gallery</button>
+                        <button class="nav-button">News</button>
+                        <button class="nav-button">info</button>
+                    </ul>
+                  </div>
             </div>
         </nav>
     </div>
@@ -76,13 +102,17 @@
         <form class="form-container">
             <h3 class="selected-items-head">Check the details of selected items</h3>
             <hr>
-            <div>
-                <label for="price" class="label">Price</label>
-                <input type="text" class="text-input" value="700" id='price' readonly/>
-                <label for="quantity" class="label">Quantity</label>
-                <button class="quantity-btn" type="button">+</button>
-                <input type="text" class="text-input" value="2" id='price' readonly/>
-                <button class="quantity-btn" type="button">-</button>
+            <div class="price-quantity-container">
+                <div>
+                    <label for="price" class="label">Price</label>
+                    <input type="text" class="text-input" value="700" id='price' readonly/>
+                </div>
+                <div>
+                    <label for="quantity" class="label">Quantity</label>
+                    <button class="quantity-btn" type="button">+</button>
+                    <input type="text" class="text-input" value="2" id='price' readonly/>
+                    <button class="quantity-btn" type="button">-</button>
+                </div>
             </div>
             <h2 class="bill-details-head">Bill Details</h2>
             <div>
@@ -117,5 +147,6 @@
 <footer>
     <p class="footer-para">@ All rights reserved by CMPICA (student Name: Student id)</p>
 </footer>
+<script src="/home/brilworks/Documents/myFiles/assi1/index.js"></script>
 </body>
 </html>
