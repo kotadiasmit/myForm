@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/home/brilworks/Documents/myFiles/assi1/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/home/brilworks/Documents/myFiles/assi1/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <!-- <link href="/home/brilworks/Documents/myFiles/assi1/index.scss" rel="stylesheet"/> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
 </head>
 <body>
     <div class="sticky-top">
-        <nav class="d-flex justify-content-between align-items-center m-3 bg-white">
+        <nav class="d-flex justify-content-between align-items-center p-3 bg-white">
             <img src="/home/brilworks/Documents/myFiles/assi1/images/logo.png" alt="logo" class="logo"/>
             <div>
                 <button class="nav-button">Restaurant</button>
@@ -36,16 +38,16 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/home/brilworks/Documents/myFiles/assi1/images/a4.jpg" class="c-img d-block w-100" alt="sweets">
+                    <img src="/home/brilworks/Documents/myFiles/assi1/images/a4.jpg" class="carousel-img d-block w-100" alt="sweets">
                 </div>
             <div class="carousel-item ">
-                <img src="/home/brilworks/Documents/myFiles/assi1/images/a1.jpg" class=" c-img d-block w-100" alt="sweets">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a1.jpg" class="carousel-img d-block w-100" alt="sweets">
             </div>
             <div class="carousel-item">
-                <img src="/home/brilworks/Documents/myFiles/assi1/images/a2.jpg" class="c-img d-block w-100" alt="sweets">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a2.jpg" class="carousel-img d-block w-100" alt="sweets">
             </div>
             <div class="carousel-item">
-                <img src="/home/brilworks/Documents/myFiles/assi1/images/a3.jpg" class="c-img d-block w-100" alt="sweets">
+                <img src="/home/brilworks/Documents/myFiles/assi1/images/a3.jpg" class="carousel-img d-block w-100" alt="sweets">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,30 +72,30 @@
             <img src="/home/brilworks/Documents/myFiles/assi1/images/1.jpg" alt="menu-img" class="menu-img"/>
             <img src="/home/brilworks/Documents/myFiles/assi1/images/3.jpg" alt="menu-img" class="menu-img"/>
         </div>
-        <p style="color:red; font-size: 15px;">Click the item to check the price.</p>
+        <p class='price-para'>Click the item to check the price.</p>
         <form class="form-container">
-            <h3 style="align-self: center;">Check the details of selected items</h3>
+            <h3 class="selected-items-head">Check the details of selected items</h3>
             <hr>
             <div>
                 <label for="price" class="label">Price</label>
-                <input type="text" class="textip" value="700" id='price' readonly/>
+                <input type="text" class="text-input" value="700" id='price' readonly/>
                 <label for="quantity" class="label">Quantity</label>
                 <button class="quantity-btn" type="button">+</button>
-                <input type="text" class="textip" value="2" id='price' readonly/>
+                <input type="text" class="text-input" value="2" id='price' readonly/>
                 <button class="quantity-btn" type="button">-</button>
             </div>
-            <h2 style="color: orange; align-self: center;">Bill Details</h2>
+            <h2 class="bill-details-head">Bill Details</h2>
             <div>
                 <label for="total" class="amount-label">Total Items</label>
-                <input type="text" class="textip payip" value="1400" id='total' readonly/>
+                <input type="text" class="text-input payment-input" value="1400" id='total' readonly/>
             </div>
             <div>
                 <label for="fee" class="amount-label">Delivery Fee</label>
-                <input type="text" class="textip payip" value="50" id='fee' readonly/>
+                <input type="text" class="text-input payment-input" value="50" id='fee' readonly/>
             </div>
             <div>
                 <label for="pay" class="amount-label ">To pay</label>
-                <input type="text" class="textip payip" value="1450" id='pay' readonly/>
+                <input type="text" class="text-input payment-input" value="1450" id='pay' readonly/>
             </div>
         </form>
     </div>
@@ -112,7 +114,7 @@
         <p class="soup-name">Shrimp & Tomato</p>
     </div>
 </div>
-<footer class="footer">
+<footer>
     <p class="footer-para">@ All rights reserved by CMPICA (student Name: Student id)</p>
 </footer>
 </body>
